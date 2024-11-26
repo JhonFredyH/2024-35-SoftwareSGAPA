@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Coming Soon", cursive;
+    list-style: none;
+}
+
+:root {
+    --sky-blue: #4C9AFF;
+    --aqua-blue: #00B0FF;
+    --terra-blue: #2d2382;
+    --emerald-green: #28A745;
+    --lime-green: #7CFC00;
+    --burnt-orange: #FF6F00;
+    --sunset-orange: #FFA726;
+    --golden-yellow: #FFD700;
+    --sunshine-yellow: #FFEB3B;
+    --white: #ffff;
+    --pearl-white: #F2F2F2;
+    --light-grey: #E0E0E0;
+    --charcoal-black: #333333;
+    --navy-blue: #0C2161;
+    --midnight-blue: #000239;
+    --black-midnight: #0000;
+    --hover: #3f33a1;
+    --font-size-icon: 2.5rem;
+    --font-size-icon-small: 1.8rem;
+    --font-size-link: 2.0rem;
+    --font-size-link-submenu: 1.20rem;   
+    --font-size-medium: 18px;
+    --font-size-large: 20px;
+    --font-size-XL: 28px;
+    --font-size-title-mini : 14px;
+    --font-size-title-small: 20px;
+    --font-size-title-medium: 32px;
+    --font-size-title-large: 40px;
+}
