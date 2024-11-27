@@ -3,7 +3,7 @@ body {
     transition: background-color 0.3s ease;
 
     &.dark {
-        background-color: #242424;
+        background-color: var(--dark);
         color: #ffffff;
     }
 }
@@ -27,7 +27,7 @@ body {
 
 
     &.dark {
-        background-color: #242424;
+        background-color: var(--dark);
         color: #ffffff;
     }
 
@@ -152,10 +152,11 @@ body {
             }
 
             .sub_menu {
-                padding: 10px 100px;
-                margin-top: 10px;
+                padding: 5px 5px 20px 5px;
+                margin-top: -10px;
                 width: 100%;
                 display: none;
+                
 
 
                 &.show {
@@ -163,30 +164,23 @@ body {
                 }
 
                 li {
-                    padding: 8px 0;
+                    transition: all 0.3 ease;
 
+                   &:hover {
+                    color: var(--sky-blue);
+                    background-color: var(--hover);
+                                               
+                }
 
                     a {
                         display: block;
                         color: var(--white);
                         font-size: var(--font-size-link-submenu);
                         margin: 1px;
-                        text-decoration-thickness: 2px;
-                        text-underline-offset: 4px;
-                        transition: all 0.3 ease;
-
-                        &:hover {
-                            color: var(--sky-blue);
-                            text-decoration: underline;
-                            text-decoration-thickness: 3px;                          
-                            text-underline-offset: 6px;
-
-                            
-                        }
-
-
-
-                    }
+                        text-align: center;             
+                   }            
+   
+                   
 
                 }
 
@@ -333,7 +327,7 @@ body {
                                             visibility: hidden;
 
                                             &:checked+label {
-                                                background-color: #515050;
+                                                background-color: #282727;
                                             }
 
                                             &:checked+label::after {
