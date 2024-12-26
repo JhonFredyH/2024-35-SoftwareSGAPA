@@ -86,3 +86,55 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
+// Array de estudiantes
+const students = [
+    "Juan Pérez",
+    "María López",
+    "Carlos Gómez",
+    "Ana Torres",
+    "Luis Fernández",
+    "Sofía Martínez",
+    "Pedro Ramírez",
+    "Laura Herrera",
+    "Jorge Díaz",
+    "Carmen Vega",
+    "Jhon Hidalgo",
+    "Alajandra Marin"
+
+];
+
+
+const tableBody = document.getElementById("students-table-body");
+
+
+students.forEach((student, index) => {
+    const row = document.createElement("tr");
+
+
+    const nameCell = document.createElement("td");
+    nameCell.textContent = student;
+    row.appendChild(nameCell);
+
+
+    for (let i = 1; i <= 4; i++) {
+        const cell = document.createElement("td");
+        const input = document.createElement("input");
+        input.type = "number";
+        input.min = "0";
+        input.max = "5";
+        input.step = "0.1";
+        input.className = "input-grade";
+        input.id = `nota${i}-${index}`;
+        input.name = `nota${i}-${index}`;
+        input.value = "0";
+        cell.appendChild(input);
+        row.appendChild(cell);
+    }
+
+
+    tableBody.appendChild(row);
+});
+
+
+
+

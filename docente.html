@@ -34,7 +34,7 @@
                     </a>
                 </div>
                 <ul class="sub_menu">
-                    <li><a href="#">Sexto-1</a></li>
+                    <li><a href="#" id="toggle-sexto-1">Sexto-1</a></li>
                     <li><a href="#">Sexto-2</a></li>
                     <li><a href="#">Sexto-3</a></li>
                     <li><a href="#">Sexto-5</a></li>
@@ -92,7 +92,7 @@
                 <div class="link_no_arrows">
                     <a href="#">
                         <span class="icon">
-                            <i class="material-icons">calendar_month </i>
+                            <i class="material-icons">calendar_month</i>
                         </span>
                         <span class="link_name">Calendario Académico</span>
                     </a>
@@ -187,6 +187,39 @@
             </div>
         </div>
     </div>
+    <div class="grades-table" id="table-sexto-1">
+        <h3>Calificaciones Sexto-1</h3>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Estudiante</th>
+                        <th>Nota 1</th>
+                        <th>Nota 2</th>
+                        <th>Nota 3</th>
+                        <th>Nota Final</th>
+                    </tr>
+                </thead>
+                <tbody id="students-table-body">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleButton = document.getElementById('toggle-sexto-1');
+            const table = document.getElementById('table-sexto-1');
+
+            toggleButton.addEventListener('click', function (event) {
+                event.preventDefault(); 
+                table.classList.toggle('hidden');
+            });
+        });
+
+
+
+
+    </script>
     <script src="assets/js/docente.js"></script>
 </body>
 
